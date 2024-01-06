@@ -1,0 +1,664 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <meta content="IE-edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, intial-scale=1.0" name="viewport">
+    <title>Shopping Website</title>
+    <!--fav-icon---------------->
+    <link rel="shortcut icon" href="images/fav-icon.png" />
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css" />
+
+    <script type="text/javascript" src="JS/JQuery.js"></script>
+    <script type="text/javascript" src="JS/lightslider.js"></script>
+
+    <!--style----->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        body {
+            font-family: poppins;
+        }
+    </style>
+
+
+    <!--Navigation Bar-->
+    <nav>
+        <!--social-links-and-phone-number----------------->
+        <div class="social-call">
+            <!--social-links--->
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+            <!--phone-number------>
+            <div class="phone">
+                <span>Call: +212667212946</span>
+            </div>
+        </div>
+        <!--menu-bar----------------------------------------->
+        <div class="navigation">
+            <!--logo------------>
+            <a href="#" class="logo"><img src="IMAGES/logo/LOGO_ETA.png"></a>
+            <!--menu-icon------------->
+            <div class="toggle"></div>
+            <!--menu----------------->
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li class="shop"><a href="#">Shop</a></li>
+                <li>
+                    <a href="#">Embeded Systems</a>
+                    <!--lable---->
+                    <span class="sale-lable">Sale</span>
+                </li>
+                <li><a href="#">Sensors</a></li>
+                <li><a href="Static_01/HTML/About_us.html">About us</a></li>
+            </ul>
+            <!--right-menu----------->
+            <div class="right-menu">
+                <a href="javascript:void(0);" class="search">
+                    <i class="fas fa-search"></i>
+                </a>
+                <a href="javascript:void(0);" class="user">
+                    <i class="far fa-user"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-shopping-cart">
+                        <span class="num-cart-product">0</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/c8e4d183c2.js"></script>
+
+    <!--search-bar----------------------------------->
+    <div class="search-bar">
+
+        <!--search-input------->
+        <div class="search-input">
+            <input type="text" placeholder="Search For Product" name="search" />
+            <!--cancel-btn--->
+            <a href="javascript:void(0);" class="search-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+
+        </div>
+    </div>
+
+    <!--using JQuery--------------->
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+
+
+
+
+
+    <!---login-and-sign-up--------------------------------->
+    <div class="form">
+        <!--login---------->
+        <div class="login-form">
+            <!--cancel-btn---------------->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Log In</strong>
+            <!--inputs-->
+            <form>
+                <input type="email" name="email" placeholder="Example@gmail.com" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <input type="submit" value="Log In" />
+            </form>
+            <!--forget-and-sign-up-btn-->
+            <div class="form-btns">
+                <a href="#" class="forget">Forget Your Password?</a>
+                <a href="javascript:void(0);" class="sign-up-btn">Create Account</a>
+            </div>
+        </div>
+        <!--Sign-up---------->
+        <div class="sign-up-form">
+            <!--cancel-btn---------------->
+            <a href="javascript:void(0);" class="form-cancel">
+                <i class="fas fa-times"></i>
+            </a>
+            <strong>Sign Up</strong>
+            <!--inputs-->
+            <form>
+                <input type="text" name="fullname" placeholder="Full Name" required />
+                <input type="email" name="email" placeholder="Example@gmail.com" required />
+                <input type="password" name="password" placeholder="Password" required />
+                <input type="submit" value="Sign Up" />
+            </form>
+            <!--forget-and-sign-up-btn-->
+            <div class="form-btns">
+                <a href="javascript:void(0);" class="already-account">
+                    Already Have Account?
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="slider_">
+        <div class="slides_">
+            <input type="radio" name="radio.btn" id="radio1">
+            <input type="radio" name="radio.btn" id="radio2">
+            <input type="radio" name="radio.btn" id="radio3">
+            <input type="radio" name="radio.btn" id="radio4">
+            <input type="radio" name="radio.btn" id="radio5">
+            <input type="radio" name="radio.btn" id="radio6">
+
+            <div class="slide first_">
+                <img src="IMAGES/Slide_web_00.jpg" alt="" />
+            </div>
+            <div class="slide">
+                <img src="IMAGES/Slide_web_01.jpg" alt="" />
+            </div>
+            <div class="slide">
+                <img src="IMAGES/Slide_web_06.jpg" alt="" />
+            </div>
+            <div class="slide">
+                <img src="IMAGES/Slide_web_02.jpg" alt="" />
+            </div>
+            <div class="slide">
+                <img src="IMAGES/Slide_web_03.jpg" alt="" />
+            </div>
+            <div class="slide f-slide-3">
+                <img src="IMAGES/Slide_web_05.jpg" alt="" />
+            </div>
+
+            <div class="navigation_auto">
+                <div class="auto_btn1"></div>
+                <div class="auto_btn2"></div>
+                <div class="auto_btn3"></div>
+                <div class="auto_btn4"></div>
+                <div class="auto_btn5"></div>
+                <div class="auto_btn5"></div>
+            </div>
+        </div>
+        <div class="navigation_manual">
+            <label for="radio1" class="manual_btn"></label>
+            <label for="radio2" class="manual_btn"></label>
+            <label for="radio3" class="manual_btn"></label>
+            <label for="radio4" class="manual_btn"></label>
+            <label for="radio5" class="manual_btn"></label>
+            <label for="radio5" class="manual_btn"></label>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 6) {
+                counter = 1;
+            }
+        }, 3000);
+
+    </script>
+
+
+    <!--light-slider-files-->
+    <!--js-link--------------------->
+    <!---
+    <script src="JS/Jquery_.js"></script>
+    <script src="JS/lightslider.js"></script>
+    -->
+    <!--product-categories-slider---------------------->
+
+    <ul id="autoWidth" class="container" class="cs-hidden">
+        <!--box-1--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p10.jpg">
+                </a>
+            </div>
+            <span>ARDUINO UNO R3</span>
+        </li>
+        <!--box-2--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p8.jpg">
+                </a>
+            </div>
+            <span>ARDUINO MEGA</span>
+        </li>
+        <!--box-3--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p7.jpg">
+                </a>
+            </div>
+            <span>JETSON NANO</span>
+        </li>
+        <!--box-4--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p9.jpg">
+                </a>
+            </div>
+            <span>ARDUINO NANO</span>
+        </li>
+        <!--box-5--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p3.jpg">
+                </a>
+            </div>
+            <span>RASPBERRY PI</span>
+        </li>
+        <!--box-6--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p5.jpg">
+                </a>
+            </div>
+            <span>RFID SENSORS</span>
+        </li>
+        <!--box-7--------------------->
+        <li class="item">
+            <div class="feature-box">
+                <a href="#">
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/ETA_SCANNER.jpg">
+                </a>
+            </div>
+            <span>EtaScanner</span>
+        </li>
+
+    </ul>
+
+
+    <!--NEW ARRIVAL-------------------------------->
+    <section class="new-arrival">
+
+        <!--heading-------->
+        <div class="arrival-heading">
+            <strong>New Arrival</strong>
+            <p>We Provide You New Electronic Materials  </p>
+        </div>
+        <!--products----------------------->
+        <div class="product-container">
+
+            <!--product-box-1---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P10.html" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p0.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P10.html" class="p-name">Multicolored Dupont Wire</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-2---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P0.html" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p1.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P0.html" class="p-name">2004 20x4 LCD Module Shield</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-3---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P8.html" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p2.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P8.html" class="p-name">Started KIT Arduino UNO R3</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-4---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P4.html" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p3.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P4.html" class="p-name">Raspberry Pi 4 8GB 64GB/32GB KIT</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-5---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P5.html" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p4.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P5.html" class="p-name">Mini solar Panel</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-6---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P6.html" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p5.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P6.html" class="p-name">RFID IC Card</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-7---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P9.html" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p6.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P9.html" class="p-name">4 Mini PCB Board</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-8---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P7.html" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p7.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P7.html" class="p-name">Nvidia Jetson Nano</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-9---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P2.html" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p8.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P2.html" class="p-name">Arduino Mega</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-10---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P3.html" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p9.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P3.html" class="p-name">Arduino Nano</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-8---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P1.html" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/p10.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P1.html" class="p-name">Arduino R3</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+            <!--product-box-9---------->
+            <div class="product-box">
+                <!--product-img------------>
+                <div class="product-img">
+                    <!--add-cart---->
+                    <a href="Static_01/HTML/Index_P1.html" class="add-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                    </a>
+                    <!--img------>
+                    <img src="IMAGES/PRODUCT_FOR_WEB/IMAGES/ETA_SCANNER.jpg">
+                </div>
+                <!--product-details-------->
+                <div class="product-details">
+                    <a href="Static_01/HTML/Index_P1.html" class="p-name">EtaScanner</a>
+                    <span class="p-price">MAD XX.XX</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!---sale-----------------------------------
+    <section class="sale">
+        <!--sale-box-1-------------------
+        <div class="sale-box sale-1">
+            <img src="IMAGES/sale-1.jpg">
+
+            <a href="#">
+                <div class="sale-text">
+                    <strong>Bag with rose pattern</strong>
+                    <span>Sale off 25%</span>
+                </div>
+            </a>
+
+        </div>
+        <!--sale-box-2-------------------
+        <div class="sale-box sale-1">
+            <img src="IMAGES/sale-2.jpg">
+
+            <a href="#">
+                <div class="sale-text">
+                    <strong>Hello Summer</strong>
+                    <span>Sale off 20%</span>
+                </div>
+            </a>
+
+        </div>
+        <!--sale-box-3--------------------
+        <div class="sale-box sale-1">
+            <img src="IMAGES/sale-3.jpg">
+
+            <a href="#">
+                <div class="sale-text">
+                    <strong>Let's Party Hard Pillow</strong>
+                    <span>Sale off 25%</span>
+                </div>
+            </a>
+
+        </div>
+
+    </section>
+
+    <!--Feature-items--------------------------------
+    <section class="feature-item">
+
+        <!--heading--------
+        <div class="feature-heading">
+            <strong>Featured Items</strong>
+            <p>We Provide You New Fasion Design Clothes</p>
+        </div>
+        <!--products-----------------------
+        <div class="product-container">
+
+            <!--product-box-1----------
+            <div class="product-box">
+                <!--product-img------------
+                <div class="product-img">
+                    <!--add-cart----
+                    <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------
+                    <img src="IMAGES/p-1.png">
+                </div>
+                <!--product-details--------
+                <div class="product-details">
+                    <a href="#" class="p-name">Drawstring T-Shirt</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!--product-box-2----------
+            <div class="product-box">
+                <!--product-img------------
+                <div class="product-img">
+                    <!--add-cart----
+                    <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------
+                    <img src="IMAGES/p-2.png">
+                </div>
+                <!--product-details--------
+                <div class="product-details">
+                    <a href="#" class="p-name">Drawstring T-Shirt</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!--product-box-3----------
+            <div class="product-box">
+                <!--product-img------------
+                <div class="product-img">
+                    <!--add-cart----
+                    <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------
+                    <img src="IMAGES/p-3.png">
+                </div>
+                <!--product-details--------
+                <div class="product-details">
+                    <a href="#" class="p-name">Drawstring T-Shirt</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+            <!--product-box-4----------
+            <div class="product-box">
+                <!--product-img------------
+                <div class="product-img">
+                    <!--add-cart----
+                    <a href="#" class="add-cart"><i class="fas fa-shopping-cart"></i></a>
+                    <!--img------
+                    <img src="IMAGES/p-4.png">
+                </div>
+                <!--product-details--------
+                <div class="product-details">
+                    <a href="#" class="p-name">Drawstring T-Shirt</a>
+                    <span class="p-price">$22.00</span>
+                </div>
+            </div>
+
+        </div>
+    </section>->
+
+    <!--banner-->
+    <div class="banner-box ">
+
+        <div class="banner-text-container">
+            <div class="banner-text">
+                <span>Limited Offer</span>
+                <strong>30% Off<br /> With <font>Promo Code</font></strong>
+                <a href="Static_01/HTML/Index_01.html" class="banner-btn">Shop Now</a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <!--services------------------------->
+    <section class="services">
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-shipping-fast"></i>
+            <span>Free Shipping</span>
+            <p>Free Shipping for all US order</p>
+        </div>
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-headphones-alt"></i>
+            <span>Support 24/7</span>
+            <p>We support 24h a day</p>
+        </div>
+        <!--services-box---------->
+        <div class="services-box">
+            <i class="fas fa-sync"></i>
+            <span>100% Money Back</span>
+            <p>You have 30 days to Return</p>
+        </div>
+
+    </section>
+    <!--footer---------------------------->
+    <footer>
+        <!--copyright-------------->
+        <span class="copyright">
+            Copyright 2022 - ETAELECTRONIC Company
+        </span>
+        <!--subcribe---------------->
+        <div class="subscribe">
+            <form>
+                <input type="email" placeholder="Example@gmail.com" required />
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+    </footer>
+
+
+
+
+    <script src="JS/Jquery_.js"></script>
+
+</head>
+<body>
+</body>
+</html>
